@@ -1,0 +1,192 @@
+@import "title-template/title-template.wxss";
+@import "/components/copyright/copyright.wxss";
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.swiper,.swiper image{
+  width: 750rpx;
+  height: 400rpx;
+}
+.summary{
+  padding: 0 30rpx;
+  height: 395rpx;
+  background: #ffffff;
+}
+.summary-text{
+  font-size: 24rpx;
+  line-height: 40rpx;
+  text-indent: 2em;
+}
+.cooperations{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cooperations .cooperations-item{
+  margin-bottom: 30rpx;
+  height: 65rpx;
+  width: 65rpx;
+}
+
+.cultural{
+  margin-top: 8rpx;
+}
+.cultural image{
+  width: 750rpx;
+  height: 208rpx;
+  display: block;
+}
+.team{
+  padding: 0 30rpx;
+  background: #ffffff;
+  margin-top: 8rpx;
+}
+.team-scroll{
+  padding: 0 48rpx;
+  position: relative;
+}
+.teamPicture{
+  white-space: nowrap;
+  font-size: 0;
+}
+.team-item{
+  display: inline-block;
+  padding-right: 26rpx;
+}
+.team-item image{
+  width: 180rpx;
+  height: 180rpx;
+  display: block;
+}
+.name{
+  line-height: 52rpx;
+  font-size: 22rpx;
+  text-align: center;
+}
+.team-item .job{
+  line-height: 62rpx;
+  height: 42rpx;
+  font-size: 22rpx;
+  text-align: center;
+}
+.team-item:last-child{
+  padding-right: 0;
+}
+.imageWrapper{
+  position: absolute;
+  padding: 68rpx 30rpx;
+  top: 0;
+}
+.imageWrapper image{
+  width: 22rpx;
+  height: 44rpx;
+  display: block;
+}
+.left{
+  left: -30rpx;
+}
+.right{
+  right: -30rpx;
+}
+.cooperation{
+  padding: 0 30rpx;
+  background: #ffffff;
+  margin-top: 8rpx;
+}
+.map{
+  padding: 0 30rpx;
+  background: #ffffff;
+  margin-top: 8rpx;
+}
+.infomation{
+  font-size: 24rpx;
+  line-height: 65rpx;
+  color: #010101;
+}
+.information-wraper{
+  padding-bottom: 54rpx;
+}
+.address map{
+  height: 503rpx;
+  width: 690rpx;
+}
+.twoCode{
+  padding: 0 50rpx 34rpx 50rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.twoCode .twoCode-item image{
+  width: 234rpx;
+  height: 234rpx;
+  display: block;
+}
+.twoCode .twoCode-item .text{
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 24rpx;
+  text-align: center;
+}
+
+/* 队员弹出层  */
+.layout{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+}
+.layout-conten{
+  position: fixed;
+  top: 90rpx;
+  left:50%;
+  width: 480rpx;
+  margin-left: -300rpx;
+  height: 630rpx;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 120rpx 60rpx 80rpx 60rpx;
+  transform: translateY(-520px);
+}
+.layout-conten scroll-view{
+  height: 100%;
+}
+.layout-conten .content{
+  text-indent: 2em;
+  line-height: 58rpx;
+  font-size: 30rpx;
+}
+.layout-top{
+  width: 144rpx;
+  height: 144rpx;
+  position: absolute;
+  top: -72rpx;
+  left:50%;
+  margin-left: -72rpx;
+  border-radius: 50%
+}
+.layout-close{
+  position: absolute;
+  width: 100rpx;
+  display: flex;
+  height: 100rpx;
+  left:50%;
+  margin-left: -50rpx;
+  bottom: -125rpx;
+}
+.layout-close image{
+  width: 72rpx;
+  height: 72rpx;
+  margin: auto;
+}
+.phone{
+  float: right;
+  font-weight: bold;
+  background: #fed404;
+  padding: 0 20rpx;
+  border-radius: 20rpx;
+  line-height: 65rpx;
+  color: #fff;
+}

@@ -1,0 +1,3 @@
+<template name="titltTemplate">
+  <view class="title">{{summary || team || cultural || cooperation || map}}<view class="icon"></view></view>
+</template>

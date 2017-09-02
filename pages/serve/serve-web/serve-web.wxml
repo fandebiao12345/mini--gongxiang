@@ -1,0 +1,60 @@
+<!--serve-web.wxml-->
+<import src="/pages/serve/h1-template/h1-template.wxml" />
+
+<image src="https://mini.0315678.cn/wxImg/serve/web/banner-web.jpg" class="banner"></image>
+<view class="part1">
+  <template is="h1Template" data="{{...title1}}"></template>
+  <view class="part1-content">
+    <view class="part1-content-item">
+      <image src="https://mini.0315678.cn/wxImg/serve/web/img-1.png"></image>
+      <view class="title">网站建设</view>
+      <view class="text">专业的网站设计及开发服务，包括品牌网站，房产网站，集团网站，企业网站，营销型网站，视交及应用类网站。</view>
+    </view>
+    <view class="part1-content-item">
+      <image src="https://mini.0315678.cn/wxImg/serve/web/img-2.png"></image>
+      <view class="title">移动终端开发</view>
+      <view class="text">手机网站建设，微官网建设，微信二次开发，APP应用开发，为移动设备，平板电脑，移动产品等终端提供交互流程及界面设计服务，包括IOS，Android，Win等</view>
+    </view>
+    <view class="part1-content-item">
+      <image src="https://mini.0315678.cn/wxImg/serve/web/img-3.png"></image>
+      <view class="title">视觉设计</view>
+      <view class="text">企业及软件的LOGO设计，企业公司的VI以及各类标识和平面传播设计，店铺策划装修，网站专题包装设计，交互动画设计等</view>
+    </view>
+    <view class="part1-content-item">
+      <image src="https://mini.0315678.cn/wxImg/serve/web/img-4.png"></image>
+      <view class="title">策划营销</view>
+      <view class="text">
+        <view class="classname">+网站SEO搜索引擎优化</view>
+        <view class="classname">+网站售后增值维护推广</view>
+        <view class="classname">+网站维护托管服务</view>
+        <view class="classname">+网站后期维护运营人才培训</view>
+        <view class="classname">+微信营销/问答营销/软文发布/信誉提升</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="part2">
+  <template is="h1Template" data="{{...title2}}"></template>
+  <image src="https://mini.0315678.cn/wxImg/serve/web/part2-img.jpg" class="part2-img"></image>
+  <view class="part2-content">
+    <view class="part2-content-item">
+      <view class="title">专业</view>
+      <view class="text">多年沉淀汇聚行业设计精英团队，十年坚持始终追求细节完美品质，设计精英汇聚拒绝平庸，独特品味</view>
+    </view>
+    <view class="part2-content-item">
+      <view class="title">服务</view>
+      <view class="text">
+        <view class="classname">丰富网站制作的经验 方便 省心</view>
+        <view class="classname">商端的网站设计创意 诚信 放心</view>
+        <view class="classname">完善的品质售后服务 创新 合作</view>
+      </view>
+    </view>
+    <view class="part2-content-item">
+      <view class="title">口碑</view>
+      <view class="text">河北最具影响力的机构之一，最深受客户欢迎网站建设服务品牌，一站式网站制作，推广，营销服务商</view>
+    </view>
+  </view>
+</view>
+<view class="footer">
+  <view class="contact" catchtap="onTapContact">联系我们拥有自己的网站</view>
+</view>

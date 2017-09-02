@@ -1,0 +1,6 @@
+.copyright{
+  line-height: 100rpx;
+  font-size: 20rpx;
+  text-align: center;
+  height: 100rpx;
+}

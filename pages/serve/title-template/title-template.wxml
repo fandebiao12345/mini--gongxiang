@@ -1,0 +1,6 @@
+<template name="titleTemplate">
+  <view class="TITLE {{titleClass}}">
+    <view class="chinese {{chinese}} {{price.titleClass}}">{{project.title}}{{title}}{{process.title}}{{price.title}}{{compare.title}}{{display.title}}</view>
+    <view class="english {{english}}">{{project.eng}}{{eng}}{{process.eng}}{{price.eng}}{{compare.eng}}{{display.eng}}</view>
+  </view>
+</template>

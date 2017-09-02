@@ -1,0 +1,5 @@
+<template name="copyright">
+  <view class="copyright">
+    COPYRIGHT 共享科技
+  </view>
+</template>

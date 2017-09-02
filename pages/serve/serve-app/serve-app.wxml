@@ -1,0 +1,20 @@
+<import src="/pages/serve/h1-template/h1-template.wxml" />
+<view class="banner">
+  <image src="https://mini.0315678.cn/wxImg/serve/app/banner-app.png" lazy-load="true"></image>
+</view>
+<view class="content">
+  <view class="title">
+    <template is="h1Template" data="{{...title}}" />
+  </view>
+  <view class="advantage">
+    <block wx:for="{{advantages}}" wx:key="{{index}}">
+      <view class="advantage-item">
+        <image src="{{item.img}}" class="left"></image>
+        <view class="classname" class="right">
+          <view class="title">{{item.title}}<view class="title2">{{item.title2}}</view></view>
+          <view class="text">{{item.text}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,89 @@
+<!--serve-mini.wxml-->
+<import src="/pages/serve/h1-template/h1-template.wxml" />
+<view class="banner">
+  <image src="https://mini.0315678.cn/wxImg/serve/mini/banner-mini.jpg"></image>
+</view>
+<view class="part">
+  <view class="title">
+    <template is="h1Template" data="{{...title1}}" />
+  </view>
+  <image src="https://mini.0315678.cn/wxImg/serve/mini/bg-1.jpg" class="bg-1"></image>
+  <view class="QA">
+    <view class="ques">问： 为什么"发现“里没有找到"小程序”入口？</view>
+    <view class="answ">答： 在微信中搜索任意一款叫程序的名字，点开它，再返回发现，你就能获得小程序的入口!</view>
+  </view>
+</view>
+<view class="part">
+  <view class="title">
+    <template is="h1Template" data="{{...title2}}" />
+  </view>
+  <image src="https://mini.0315678.cn/wxImg/serve/mini/bg-2.jpg" class="bg-2"></image>
+  <view class="ad-list">
+    <view class="icon">
+      <image src="https://mini.0315678.cn/wxImg/serve/mini/icon-1.png"></image>
+    </view>
+    <view class="text">
+      <view class="title-one">交互便捷</view>
+      <view class="title-two">区别与原来微信服务号H5页面店铺,交互简单，打开便捷，用户完全不需注册，因为本身是微信的一部分</view>
+    </view>
+  </view>
+  <view class="ad-list">
+    <view class="icon">
+      <image src="https://mini.0315678.cn/wxImg/serve/mini/icon-2.png"></image>
+    </view>
+    <view class="text">
+      <view class="title-one">信息直达</view>
+      <view class="title-two">使用微信自身通知体系，商户活动直达用户，又不会造成干扰</view>
+    </view>
+  </view>
+  <view class="ad-list">
+    <view class="icon">
+      <image src="https://mini.0315678.cn/wxImg/serve/mini/icon-3.png"></image>
+    </view>
+    <view class="text">
+      <view class="title-one">即用即走</view>
+      <view class="title-two">轻量化微信服务应用，每一功能操作步骤不超过两步，符合时代应用趋势</view>
+    </view>
+  </view>
+  <view class="ad-list">
+    <view class="icon">
+      <image src="https://mini.0315678.cn/wxImg/serve/mini/icon-4.png"></image>
+    </view>
+    <view class="text">
+      <view class="title-one">与微信内部功能互补</view>
+      <view class="title-two">原有的服务号/订阅号负责店铺推广、文章传播、而小程序则实现与用户交互，产生消费的过程</view>
+    </view>
+  </view>
+</view>
+<view class="part">
+  <view class="title">
+    <template is="h1Template" data="{{...title3}}" />
+  </view>
+  <view class="part3-content">
+    <block wx:for="{{part3Content}}" wx:key="{{index}}">
+      <view class="part3-content-item">
+        <image src="{{item.img}}"></image>
+        <view class="text">{{item.text}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="part">
+  <view class="title">
+    <template is="h1Template" data="{{...title4}}" />
+  </view>
+  <view class="part-4-content">
+    <block wx:for="{{part4Content}}" wx:key="{{index}}">
+      <view class="part4-content-item">
+        <view class="img"><image src="{{item.img}}"></image></view>
+        <view class="text">
+          <view class="text1">{{item.text1}}</view>
+          <view class="text2">{{item.text2}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="footer">
+  <view class="contact" catchtap="onTapContact">联系我们拥有自己的小程序</view>
+</view>

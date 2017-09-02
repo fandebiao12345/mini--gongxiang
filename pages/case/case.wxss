@@ -1,0 +1,103 @@
+/* case.wxss */
+@import "/components/copyright/copyright.wxss";
+.topBar{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  background: #000;
+}
+.active{
+  position: absolute;
+  width: 0;
+  height: 6rpx;
+  border-radius: 4rpx;
+  background: #ffba00;
+  z-index: 999;
+  top: 80rpx;
+  transition: all 0.5s ease-in-out;
+}
+.topbar-title{
+  display: inline-block;
+  line-height: 106rpx;
+  font-size: 26rpx;
+  color: #fff;
+  text-align: center;
+  padding: 0 30rpx;
+  position: relative;
+}
+._active{
+  position: absolute;
+  height: 6rpx;
+  width: 50%;
+  left: 50%;
+  bottom: 17rpx;
+  margin-left: -25%;
+  background: #ffba00;
+}
+.topbar-title:first-child{
+  padding-left: 30rpx;
+}
+.topbar-title:last-child{
+  padding-right: 30rpx;
+}
+.case{
+  padding: 136rpx 30rpx 0rpx 30rpx;
+  overflow: hidden;
+}
+.case-item{
+  float: left;
+  margin-bottom: 20rpx;
+}
+.case-item .text{
+  padding: 0 20rpx;
+  background: #fff;
+}
+.case-item .text .title{
+  line-height: 69rpx;
+  font-size: 10px;
+  border-bottom: 1rpx solid #878787;
+}
+.case-item .options view{
+  font-size: 18rpx;
+  color: #878787;
+  box-sizing: border-box;
+  line-height: 73rpx;
+}
+.case-item .options{
+  display: flex;
+  justify-content: space-between
+}
+.case-item .options .className{
+  background-image: url('http://mini.0315678.cn/wxImg/case/case-icon1.png');
+  background-repeat: no-repeat;
+  background-size: 18rpx 18rpx;
+  background-position: 0 center;
+  padding-left: 33rpx;
+}
+.case-item .options .date{
+  background-image: url('http://mini.0315678.cn/wxImg/case/case-icon2.png');
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: 18rpx 18rpx;
+  width: 129rpx;
+  padding-left: 33rpx;
+}
+.case-item .options .seeNum{
+  background-image: url('http://mini.0315678.cn/wxImg/case/case-icon3.png');
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: 24rpx 18rpx;
+  width: 76rpx;
+  padding-left: 33rpx;
+  text-align: right;
+}
+.case-item:nth-child(even){
+  margin-left: 20rpx;
+}
+.case-item image{
+  display: block;
+  width: 335rpx;
+  height: 233rpx;
+}

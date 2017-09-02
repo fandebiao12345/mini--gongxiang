@@ -1,0 +1,52 @@
+/* serve-app.wxss */
+@import "../h1-template/h1-template.wxss";
+.banner image{
+  width: 100%;
+  height: 484rpx;
+}
+.content{
+  background: #fff;
+  padding-top: 50rpx;
+  padding-bottom: 140rpx;
+}
+.advantage{
+  padding: 0 72rpx; 
+}
+.advantage .advantage-item{
+  display: flex;
+  align-items: center;
+  margin-top: 60rpx;
+}
+.advantage .advantage-item .left{
+  flex: 78rpx 0 0;
+  height: 78rpx;
+}
+.advantage .advantage-item .right{
+  font-size: 24rpx;
+  margin-left: 50rpx;
+}
+.advantage .advantage-item .right .title{
+  color: #1f1f1f;
+  line-height: 52rpx;
+}
+.advantage .advantage-item .right .text{
+  color: #646464;
+  line-height: 36rpx;
+}
+.advantage .advantage-item:nth-child(4) .title{
+  width: 176rpx;
+  text-align: center;
+  line-height: 36rpx;
+}
+.advantage .advantage-item:nth-child(4) .text{
+  line-height: 60rpx;
+}
+.advantage .advantage-item:nth-child(3) image{
+  height: 84rpx;
+}
+.advantage .advantage-item:nth-child(4) image{
+  height: 97rpx;
+}
+.advantage .advantage-item:nth-child(5) image{
+  height: 69rpx;
+}

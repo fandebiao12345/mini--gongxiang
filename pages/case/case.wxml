@@ -1,0 +1,25 @@
+<!--case.wxml-->
+<import src="/components/copyright/copyright.wxml" />
+<scroll-view scroll-x class="topBar">
+  <block wx:for="{{topBar}}" wx:key="{{index}}">
+    <view class="topbar-title" catchtap="onBarTap" data-index="{{index}}">{{item.name}}
+      <view class="_active" wx:if="{{noCan && currentIndex == index}}"></view>
+    </view>
+  </block>
+  <view class="active" style="width:{{width}}px;left:{{left}}px"></view>
+</scroll-view>
+<view class="case">
+  <block wx:for="{{currentClass}}" wx:key="{{index}}">
+    <view class="case-item" catchtap="onTapCase" data-index="{{index}}" data-classIndex="{{item.index}}">
+      <image src="{{item.img}}"></image>
+      <view class="text">
+        <view class="title">{{item.title}}</view>
+        <view class="options">
+          <view class="className">{{item.className}}</view>
+          <view class="seeNum">{{item.seeNum}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<template is="copyright" />

@@ -1,0 +1,2 @@
+/* case-app.wxss */
+@import '../mobile-template/mobile-template.wxss';

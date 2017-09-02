@@ -1,0 +1,12 @@
+<template name="mobileTemplate">
+  <view class="mobileWrapper">
+    <block wx:for="{{cases}}">
+      <view class="case-item">
+        <view class="case-item-bg">
+          <image src="{{item.img}}" catchtap="onTapImage" data-index="{{index}}"></image>
+        </view>
+        <view class="title">{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+</template>

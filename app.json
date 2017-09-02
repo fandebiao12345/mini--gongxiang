@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/serve/serve",
+    "pages/case/case",
+    "pages/serve/serve-detail/serve-detail",
+    "pages/case/case-app/case-app",
+    "pages/serve/serve-mini/serve-mini",
+    "pages/case/case-pc/case-pc",
+    "pages/serve/serve-web/serve-web",
+    "pages/serve/serve-mini/video/video",
+    "pages/message/message",
+    "pages/serve/serve-app/serve-app"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/img/index.png",
+        "selectedIconPath": "/img/index_on.png"
+      },
+      {
+        "pagePath": "pages/serve/serve",
+        "text": "服务",
+        "iconPath": "/img/serve.png",
+        "selectedIconPath": "/img/serve_on.png"
+      },
+      {
+        "pagePath": "pages/case/case",
+        "text": "案例",
+        "iconPath": "/img/case.png",
+        "selectedIconPath": "/img/case_on.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "留言",
+        "iconPath": "/img/message.png",
+        "selectedIconPath": "/img/message_on.png"
+      }
+    ],
+    "selectedColor": "#000000",
+    "color": "#000000"
+  }
+}

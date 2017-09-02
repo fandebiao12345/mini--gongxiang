@@ -1,0 +1,8 @@
+<template name="pcTemplate">
+  <view class="pcWrap">
+    <block wx:for="{{cases}}">
+        <image src="{{item.img}}" mode="widthFix"></image>
+        <view class="text">{{item.text}}</view>
+    </block>
+  </view>
+</template>

@@ -1,0 +1,33 @@
+.TITLE{
+  padding: 50rpx 0 50rpx 0;
+
+}
+.adTitle{
+  padding: 50rpx 0 50rpx 0;
+}
+.chinese{
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 36rpx;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('https://mini.0315678.cn/wxImg/serve/title-bg.png');
+}
+.chinese-advan{
+  background-image: url('https://mini.0315678.cn/wxImg/serve/serverTitle-bg.png');
+  color: #ffffff;
+}
+.english{
+  text-align: center;
+  font-size: 20rpx;
+  line-height: 30rpx;
+  color: #a3a3a3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.english-advan{
+  color: #bcbcbc;
+}
+.priClass{
+  background-image: url('https://mini.0315678.cn/wxImg/serve/serveBig-bg.png');
+}

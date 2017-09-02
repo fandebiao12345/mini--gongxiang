@@ -1,0 +1,29 @@
+<!--serve-detail.wxml-->
+<import src="../title-template/title-template.wxml" />
+<view class="title-bg">
+  <view class="options">
+    <view class="titlePrice">
+      <view class="title">{{meal.title}}</view>
+      <view class="price">{{meal.price}}</view>
+    </view>
+    <view class="extra">赠送等价电梯广告费</view>
+  </view>
+  <view class="content">
+    <block wx:for="{{meal.text}}" wx:key="{{index}}">
+      <view class="content-item">{{item}}</view>
+    </block>
+  </view>
+</view>
+<template is="titleTemplate" data="{{compare}}"></template>
+<view class="compare">
+  <image src="https://mini.0315678.cn/wxImg/serve/detail/compare.png" class="compare"></image>
+</view>
+<template is="titleTemplate" data="{{display}}"></template>
+<view class="display">
+  <block wx:for="{{meal.diplay}}" wx:key="{{index}}">
+    <view class="display-item">
+      <image src="{{item.image}}"></image>
+      <view class="text">{{item.text}}</view>
+    </view>
+  </block>
+</view>

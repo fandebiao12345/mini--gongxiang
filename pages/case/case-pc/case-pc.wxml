@@ -1,0 +1,3 @@
+<!--case-pc.wxml-->
+<import src="../pc-template/pc-template.wxml" />
+<template is="pcTemplate" data="{{cases}}"/> 

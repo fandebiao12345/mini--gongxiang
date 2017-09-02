@@ -1,0 +1,97 @@
+<import src="title-template/title-template.wxml" />
+<import src="/components/copyright/copyright.wxml" />
+<view class="wrapper">
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" circular="true" 
+  indicator-active-color="#ffffff"
+  indicator-color="#868d93"
+  circular="true"
+  >
+    <block wx:for="{{banner}}">
+      <swiper-item><image catchtap="onTapBanner" src="{{item}}"></image></swiper-item>
+    </block>
+  </swiper>
+  <view class="summary">
+    <template is="titltTemplate" data="{{summary}}" />
+    <view class="summary-text">共享科技，专注于网络品牌策划、网络品牌形象设计、软件界面设计与开发。致力于小程序开发、企业网站建设、高端品牌形象设计、交互设计、视觉设计、移动APP界面设计与开发，OA系统软件开发、用户体验于一体的专业互联网服务。</view>
+    <view class="summary-text">公司面向中小企业提供全方位的企业信息化解决方案，以良好的商业信誉，完善的服务及深厚的技术力量，以客户服务为中心，专业为客户量身打造客户喜欢的网站平台。</view>
+  </view>
+  <view class="cultural">
+    <image src="https://mini.0315678.cn/wxImg/index/cultural.jpg"></image>
+  </view>
+  <view class="team">
+    <template is="titltTemplate" data="{{team}}" />
+    <view class="team-scroll">
+      <view class="imageWrapper left" bindtap="onLeftTap" wx:if="{{over}}">
+        <image src="/img/left.png"></image>
+      </view>
+      <view class="imageWrapper right" bindtap="onRightTap" wx:if="{{over}}">
+        <image src="/img/right.png"></image>
+      </view>
+      <scroll-view scroll-x scroll-left="{{scrollLeft}}" 
+      scroll-with-animation="true" 
+      id="scroll"
+      scroll-into-view="{{toId}}"
+      class="teamPicture"
+      bindscroll="onBindScroll"
+      scroll-left="{{scrollLeft}}"
+      >
+        <block wx:for="{{teamPicture}}" wx:key="{{index}}">
+          <view class="team-item" id="{{item.id}}" catchtap="onTapTeam" data-index="{{index}}">
+            <image src="{{item.src}}"></image>
+            <view class="job">{{item.job}}</view>
+            <view class="name">{{item.name}}</view>
+          </view>
+        </block>
+      </scroll-view>  
+    </view> 
+  </view>
+  <view class="cooperation">
+    <template is="titltTemplate" data="{{cooperation}}" />
+    <view class="cooperations">
+      <block wx:for="{{cooperations}}" wx:key="{{index}}">
+        <image src="{{item}}" class="cooperations-item" bindload="setImgSize" style="width: {{iconSize[index].width}}rpx"></image>
+      </block>
+    </view>
+  </view>
+  <view class="map">
+    <template is="titltTemplate" data="{{map}}" />
+    <view class="information-wraper">
+      <view class="infomation">热线电话：400-8858-406 <view class="phone"  catchtap="phone">拨打电话</view></view>
+      <view class="infomation">联系QQ ：58598895</view>
+      <view class="infomation">官方网址：http://www.0315678.cn</view>
+      <view class="infomation">公司地址：河北省唐山市路南区宝升昌写字楼1910</view>
+    </view>
+    <!--  二维码  -->
+    <view class="twoCode">
+      <view class="contact twoCode-item" catchtap="onTapTwoCon">
+        <image src="https://mini.0315678.cn/wxImg/index/two-contact.jpg"></image>
+        <view class="text">业务联系(点击查看大图)</view>
+      </view>
+      <view class="suggest twoCode-item" catchtap="onTapTwoSug">
+        <image src="https://mini.0315678.cn/wxImg/index/two-suggest.jpg"></image>
+        <view class="text">投诉建议(点击查看大图)</view>
+      </view>
+    </view>
+    <!-- 地图  -->
+    <view class="address">
+      <map longitude="118.148070" 
+      latitude="39.625080"
+      scale="20"
+      markers="{{markers}}"
+      polyline="{{polyline}}"
+      />
+    </view>
+    <template is="copyright" />
+  </view>
+  <!-- 弹出层  -->
+  <view class="layout" wx:if="{{layout}}" animation="{{animationLayout}}" ></view>
+  <view class="layout-conten" wx:if="{{layout}}"  animation="{{animationData}}">
+    <scroll-view scroll-y>
+      <view class="content">{{introduction}}</view>
+    </scroll-view>
+    <image src="{{currentLayoutLogo}}" class="layout-top"></image>
+    <view class="layout-close" catchtap="onTapClose">
+      <image src="/img/serve/close.png"></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,2 @@
+/* case-pc.wxss */
+@import '../pc-template/pc-template.wxss';

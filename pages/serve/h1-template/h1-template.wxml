@@ -1,0 +1,6 @@
+<template name="h1Template">
+  <view class="h1">
+    <view class="title">{{h1}}</view>
+    <view class="h-group">{{h2}}</view>
+  </view>
+</template>

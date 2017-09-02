@@ -1,0 +1,4 @@
+<!--case-app.wxml-->
+<import src="../mobile-template/mobile-template.wxml" />
+<view class="classname"></view>
+<template is="mobileTemplate" data="{{cases}}"/> 

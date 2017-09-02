@@ -1,0 +1,168 @@
+/* message.wxss */
+.user-bg{
+  width:100%;
+  height:318rpx;
+  -webkit-filter:blur(20px);
+  display: block;
+}
+.layout{
+  position: absolute;
+  top:0%;
+  left: 0;
+  right: 0;
+  height: 318rpx;
+  background: rgba(0,0,0,0.5);
+}
+.ueser{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 318rpx;
+  text-align: center;
+}
+.ueser .avatar{
+  margin: 45rpx auto 0 auto;
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 50%;
+  border: 4rpx solid #fff;
+}
+.ueser .name{
+  line-height: 72rpx;
+  color: #fff;
+  font-size: 30rpx;
+}
+.address{
+  color: #fff;
+  font-size: 24rpx;
+}
+.tips{
+  line-height: 115rpx;
+  font-size: 28rpx;
+  color: #737373;
+}
+.message{
+  padding: 0 30rpx;
+  background: #fff;
+}
+.form .text{
+  border: 1px solid #b2b2b2;
+  border-radius: 4rpx;
+  padding: 15rpx;
+  box-sizing: border-box;
+  width: 690rpx;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  height: 144rpx;
+}
+.form{
+  min-height: 242rpx;
+  border-bottom: 1rpx dashed #bfbfbf;
+}
+.edits{
+  height: 97rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.photo{
+  line-height: 97rpx;
+  width: 158rpx;
+  text-align: right;
+  font-size: 24rpx;
+  color: #747474;
+  position: relative
+}
+.photo-icon{
+  width: 37rpx;
+  height: 31rpx;
+  position: absolute;
+  top: 33rpx;
+  left: 0;
+}
+.submit{
+  height: 57rpx;
+  width: 125rpx;
+  border-radius: 5rpx;
+  background: #ffcc00;
+  text-align: center;
+  line-height: 57rpx;
+  color: #fff;
+  font-size: 26rpx;
+  margin: 0;
+}
+.information{
+  height: 97rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 94rpx;
+  color: #747474;
+  font-size: 26rpx;
+}
+.information .num{
+  padding-right: 12rpx;
+}
+.userinfo-wrapper{
+  display: flex;
+  flex-direction: row;
+  height: 74rpx;
+  justify-content: space-between;
+}
+.message-item{
+  margin-top: 23rpx;
+  border-bottom: 1rpx dashed #c8c8c8; 
+}
+.userinfo .avatar{
+  height: 74rpx;
+  width: 74rpx;
+  border-radius: 50%;
+  float: left;
+}
+.nameDate{
+  float: left;
+  margin-left: 18rpx;
+  text-align: left;
+}
+.nameDate .name{
+  font-size: 24rpx;
+  line-height: 46rpx;
+}
+.nameDate .date{
+  font-size: 20rpx;
+  color: #8d8d8d;
+  line-height: 20rpx;
+}
+.relpy{
+  line-height: 74rpx;
+  font-size: 22rpx;
+  color: #929292;
+  position: relative;
+  width: 85rpx;
+  padding-right: 12rpx;
+  box-sizing: border-box;
+  text-align: right;
+}
+.reply-icon{
+  position: absolute;
+  width: 22rpx;
+  height: 22rpx;
+  left: 0;
+  top: 27rpx;
+}
+.message-item .text{
+  padding: 35rpx 0 40rpx 0;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #585858;
+  letter-spacing: 3rpx;
+}
+.load{
+  height: 118rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #737373;
+  line-height: 86rpx;
+}

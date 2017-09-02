@@ -1,0 +1,46 @@
+<!--message.wxml-->
+<image class="user-bg" src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+<view class="layout"></view>
+<view class="ueser" style="background-image:{{userInfo.avatarUrl}}">
+  <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+  <view class="name">{{userInfo.nickName}}</view >
+  <view class="address">{{userInfo.city}}</view >
+</view>
+<view class="message">
+   <view class="tips">欢迎留言给我们~</view>
+   <view class="form">
+      <form bindsubmit="onSubmit">
+        <textarea placeholder="在此输入内容..." class="text" bindconfirm="onBindConfirm" name="textarea"/>
+        <view class="edits">
+            <view class="photo" catchtap="onPhotoTap"><image src="/img/message/photo.png" class="photo-icon"></image>添加照片</view>
+            <button class="submit" formType="submit">发布</button>
+        </view>
+      </form>
+   </view>
+   <view class="information">
+      <text class="totalMessage">全部留言</text>
+      <text class="num">{{num}}条</text>
+   </view>
+   <block wx:for="{{message}}">
+      <view class="message-item">
+        <view class="userinfo-wrapper">
+          <view class="userinfo">
+            <image src="{{item.avatar}}" class="avatar"></image>
+            <view class="nameDate">
+              <view class="name">{{item.nickName}}</view>
+              <view class="date">{{item.date}}</view>
+            </view>
+          </view>
+          <view class="relpy">
+            <image src="/img/message/reply.png" class="reply-icon"></image>
+            回复
+          </view>
+        </view>
+        <view class="text">
+          <text space="emsp" selectable="true">{{item.text}}</text>
+        </view>
+      </view>
+   </block>
+   <view class="load">上拉加载</view>
+</view>
+

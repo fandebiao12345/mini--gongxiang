@@ -1,0 +1,146 @@
+/* serve-mini.wxss */
+@import "../h1-template/h1-template.wxss";
+
+page{
+  background: #fff;
+}
+
+.banner image{
+  width: 750rpx;
+  height: 400rpx;
+  display: block;
+}
+.title{
+  margin-top: 40rpx;
+}
+.bg-1{
+  width: 750rpx;
+  height: 487rpx;
+}
+.QA{
+  padding: 0 30rpx;
+  margin-top: 30rpx;
+  line-height: 36rpx;
+  font-size: 22rpx;
+  color: #444444;
+}
+.bg-2{
+  width: 750rpx;
+  height: 565rpx;
+}
+.ad-list{
+  display: flex;
+  padding: 0 50rpx;
+  margin-bottom: 80rpx;
+}
+.ad-list:last-child{
+  margin-bottom: 30rpx;
+}
+.icon{
+  flex: 100rpx;
+  display: flex;
+}
+.icon image{
+  width: 60rpx;
+  height: 60rpx;
+  margin: auto;
+}
+.ad-list .text{
+  flex: 550rpx;
+}
+.ad-list .text .title-one{
+  line-height: 36rpx;
+  font-size: 20rpx;
+  color: #4d4d4d;
+}
+.ad-list .text .title-two{
+  line-height: 24rpx;
+  font-size: 16rpx;
+  color: #5e5e5e;
+}
+.part{
+  border-bottom: 2rpx solid #f6f6f6;
+  padding-bottom: 65rpx;
+}
+.part3-content{
+  margin-top: 35rpx;
+  display: flex;
+  padding: 0 40rpx;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.part3-content-item:nth-child(-n+4){
+  margin-bottom: 50rpx;
+}
+.part3-content-item{
+  width: 140rpx;
+  border: 2rpx solid #f6f6f6;
+  height: 140rpx;
+}
+.part3-content-item image{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 26rpx auto 0 auto;
+}
+.part3-content-item .text{
+  font-size: 16rpx;
+  line-height: 48rpx;
+  text-align: center;
+}
+.part-4-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 40rpx;
+  margin-top: 28rpx;
+}
+.part4-content-item{
+  border: 2rpx solid #f8f8f8;
+  width: 316rpx;
+  display: flex;
+}
+.part4-content-item:nth-child(-n+6){
+  margin-bottom: 32rpx;
+}
+.part4-content-item .img{
+  display: flex;
+  flex: 120rpx 0 0;
+  height: 118rpx;
+}
+.part4-content-item image{
+  margin: auto;
+  width: 80rpx;
+  height: 80rpx;
+}
+.part4-content-item .text{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+}
+.part4-content-item .text1{
+  font-size: 26rpx;
+  line-height: 46rpx;
+  color: #545454;
+}
+.part4-content-item .text2{
+  font-size: 16rpx;
+  line-height: 24rpx;
+  color: #555555;
+  padding-right: 22rpx;
+}
+.footer{
+  height: 163rpx;
+  display: flex;
+}
+.footer .contact{
+  background: #94c37d;
+  height: 66rpx;
+  width: 586rpx;
+  margin:auto;
+  text-align: center;
+  font-size: 22rpx;
+  line-height: 66rpx;
+  color: #fff;
+  border-radius: 33rpx;
+}
