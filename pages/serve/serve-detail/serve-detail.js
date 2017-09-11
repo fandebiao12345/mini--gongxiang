@@ -11,11 +11,18 @@ Page({
       eng: 'Combo comparison'
     },
     display: {
-      title: '页面展示',
+      title: '案例展示',
       eng: 'Service advan'
     }
   },
-
+  onTappreviewImage(e) {
+    console.log(e);
+    let index = e.currentTarget.dataset.index;
+    console.log(this.data.meal.diplay[index].image)
+    wx.previewImage({
+      urls: [this.data.meal.diplay[index].image],
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

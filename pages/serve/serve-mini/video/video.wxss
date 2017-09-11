@@ -1,5 +1,22 @@
 /* video.wxss */
-video{
+.video{
   width: 750rpx;
   height: 400rpx;
+  display: block;
+}
+.content{
+  padding: 0 45rpx;
+  background: #fff;
+  padding-top: 8rpx;
+  padding-bottom: 180rpx;
+}
+.title{
+  font-size: 30rpx;
+  line-height: 80rpx;
+  color: #626262;
+}
+.text{
+  line-height: 44rpx;
+  font-size: 26rpx;
+  color: #555555;
 }

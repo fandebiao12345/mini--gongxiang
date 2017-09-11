@@ -12,6 +12,9 @@
     <view class="ques">问： 为什么"发现“里没有找到"小程序”入口？</view>
     <view class="answ">答： 在微信中搜索任意一款叫程序的名字，点开它，再返回发现，你就能获得小程序的入口!</view>
   </view>
+  <view class="toPlayVideo" catchtap="onTapVideo">
+    点击观看小程序介绍
+  </view>
 </view>
 <view class="part">
   <view class="title">

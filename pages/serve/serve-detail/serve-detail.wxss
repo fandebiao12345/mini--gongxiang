@@ -71,7 +71,7 @@ page{
 }
 .display image{
   width: 334rpx;
-  height: 595rpx; 
+  height: 334rpx; 
   display: block;
 }
 .display .text{
@@ -79,4 +79,13 @@ page{
   line-height: 76rpx;
   text-align: center;
   font-size: 24rpx;
+}
+.introduce{
+  padding: 0 30rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  margin-top: 26rpx;
+}
+.introduce .trade{
+  margin-top: 10rpx;
 }

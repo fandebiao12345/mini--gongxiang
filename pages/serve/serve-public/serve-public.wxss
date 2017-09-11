@@ -1,0 +1,60 @@
+/* serve-public.wxss */
+@import "../h1-template/h1-template.wxss";
+
+.banner image{
+  height: 484rpx;
+  width: 100%;
+}
+.content{
+  background: #fff;
+  padding-top: 50rpx;
+  padding-bottom: 100rpx;
+}
+.advantage{
+  padding: 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 55rpx;
+}
+.advantage-item{
+  box-sizing: border-box;
+  border: 3rpx solid #dbdada;
+  border-radius: 10rpx;
+  width: 332rpx;
+  padding: 0 22rpx;
+ align-self: flex-start;
+}
+.advantage-item:nth-child(3){
+  transform: translateY(-95rpx)
+}
+.advantage-item image{
+  margin: 36rpx auto 0 auto;
+}
+.advantage-item:nth-child(1) image{
+  height: 95rpx;
+  width: 114rpx;
+}
+.advantage-item:nth-child(2) image{
+  height: 109rpx;
+  width: 109rpx;
+}
+.advantage-item:nth-child(3) image{
+  width: 85rpx;
+  height: 98rpx;
+}
+.advantage-item .title{
+  width: 216rpx;
+  margin: 26rpx auto 0 auto;
+  font-size: 24rpx;
+  color: #1f1f1f;
+  text-align: center;
+  line-height: 36rpx;
+}
+.advantage-item .text{
+  font-size: 20rpx;
+  line-height: 36rpx;
+  margin-top: 22rpx;
+  color: #727272;
+  padding-bottom: 48rpx;
+}

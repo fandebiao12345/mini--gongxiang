@@ -6,7 +6,7 @@
   indicator-color="#868d93"
   circular="true"
   >
-    <block wx:for="{{banner}}">
+    <block wx:for="{{banner}}" wx:key="{{index}}">
       <swiper-item><image catchtap="onTapBanner" src="{{item}}"></image></swiper-item>
     </block>
   </swiper>
@@ -49,7 +49,7 @@
     <template is="titltTemplate" data="{{cooperation}}" />
     <view class="cooperations">
       <block wx:for="{{cooperations}}" wx:key="{{index}}">
-        <image src="{{item}}" class="cooperations-item" bindload="setImgSize" style="width: {{iconSize[index].width}}rpx"></image>
+        <image src="{{item}}" class="cooperations-item" bindload="setImgSize" data-index="{{index}}" style="width: {{iconSize[index].width}}rpx"></image>
       </block>
     </view>
   </view>

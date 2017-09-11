@@ -1,1 +1,5 @@
-<video src="http://mini.0315678.cn/wxImg/serve/mini/video-mini.mp4" bindplay="onbindplay"></video>
+<video class="video" src="http://150.138.135.24/vhot2.qqvideo.tc.qq.com/AkxRUOJnBqGouwCnQleN1bRUD7Vf0OQUkyr2Mb0ozQFI/j05450ha0nj.mp4?sdtfrom=v1010&guid=f839a74dce239a53879c0a05a45a8b0e&vkey=3AA5764FA7F9C8E3189E2EC0D13B522BA54FD5FD5C425F0DC2A1E32C7DC3A710959F49FF9B1F5644FA21D2B680C9DB11B1CD6416D1D07ECE4037B0931DC43FB57907ED86EE27568DC5A324F2CB1DB959EB5CCB8CA02C635197BABE4EEBD790FD88ED708AD5CB4C65473103EBC7F8DBAFAE5F813BBBFF8337&platform=2#t=60" ></video>
+<view class="content">
+  <view class="title">什么是小程序</view>
+  <view class="text">小程序是一种不需要下载安装即可使用的应用，它实现了应用“触手可及”的梦想，用户扫一扫或者搜一下即可打开应用。也体现了“用完即走”的理念，用户不用关心是否安装太多应用的问题。应用将无处不在，随时可用，但又无需安装卸载。对于开发者而言，小程序发开门槛相对较低，难度不及APP，能满足简单的基础应用，hishop小程序开发认为适合生活服务类线下商铺以及非刚需低频应用的转换。小程序能够实现消息通知、线下扫码、公众号关联等七大功能。其中通过公众号关联，用户可以实现公众号与小程序意见相互跳转。</view>
+</view>

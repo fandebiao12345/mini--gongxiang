@@ -1,0 +1,17 @@
+<!--serve-public.wxml-->
+<import src="/pages/serve/h1-template/h1-template.wxml" />
+<view class="banner">
+  <image src="https://mini.0315678.cn/wxImg/serve/public/banner-public.png" lazy-load="true"></image>
+</view>
+<view class="content">
+  <template is="h1Template" data="{{...title}}" />
+  <view class="advantage">
+    <block wx:for="{{advantages}}" wx:key="{{index}}">
+      <view class="advantage-item">
+        <image src="{{item.img}}"></image>
+        <view class="title">{{item.title}}</view>
+        <view class="text">{{item.text}}</view>
+      </view>
+    </block>
+  </view>
+</view>

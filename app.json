@@ -10,7 +10,8 @@
     "pages/serve/serve-web/serve-web",
     "pages/serve/serve-mini/video/video",
     "pages/message/message",
-    "pages/serve/serve-app/serve-app"
+    "pages/serve/serve-app/serve-app",
+    "pages/serve/serve-public/serve-public"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -14,6 +14,10 @@
     </block>
   </view>
 </view>
+<view class="introduce">
+  <view class="own">{{meal.introduce.own}}</view>
+  <view class="trade">{{meal.introduce.trade}}</view>
+</view>
 <template is="titleTemplate" data="{{compare}}"></template>
 <view class="compare">
   <image src="https://mini.0315678.cn/wxImg/serve/detail/compare.png" class="compare"></image>
@@ -22,7 +26,7 @@
 <view class="display">
   <block wx:for="{{meal.diplay}}" wx:key="{{index}}">
     <view class="display-item">
-      <image src="{{item.image}}"></image>
+      <image src="{{item.image}}" catchtap="onTappreviewImage" data-index="{{index}}"></image>
       <view class="text">{{item.text}}</view>
     </view>
   </block>

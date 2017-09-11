@@ -21,7 +21,7 @@
       <text class="totalMessage">全部留言</text>
       <text class="num">{{num}}条</text>
    </view>
-   <block wx:for="{{message}}">
+   <block wx:for="{{message}}" wx:key="{{index}}">
       <view class="message-item">
         <view class="userinfo-wrapper">
           <view class="userinfo">
